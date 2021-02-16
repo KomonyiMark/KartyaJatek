@@ -3,18 +3,22 @@
 
 main{max-width: 500px;}
 
-#játéktér{
+#jatekter{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
 }
 
 
-#játéktér div img{
+#jatekter div img{
     width: 100%;
 
 }
-#játéktér div{
+#jatekter div{
     padding: 10px;
     background-color: lightblue;
+}
+.kartya{
+    cursor: grab;
+    background-color: red !important;
 }

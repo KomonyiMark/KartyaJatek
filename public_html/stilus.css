@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+
+main{max-width: 500px;}
+
+#játéktér{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+#játéktér div img{
+    width: 100%;
+
+}
+#játéktér div{
+    padding: 10px;
+    background-color: lightblue;
+}

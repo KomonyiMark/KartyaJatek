@@ -14,16 +14,19 @@ function init() {
 
         // $("#jatekter img").eq(i).attr({"src": fajlnev, "alt": "Kártyalap"});
         $("#jatekter img").eq(i).attr({"src": "kartya/hatlap.jpg", "alt": "Kártyalap"});
+        
 
     }
 
     $("#jatekter div").click(lapcsere);
     $("#jatekter div").hover(function () {
+        $(this).fadeTo("slow", 0.15);
         $(this).addClass("kartya");
         console.log("fölötte");
 
     },
             function () {
+                $(this).fadeTo("slow", 1);
                 $(this).removeClass("kartya");
                       console.log("lejött");
             }
@@ -36,4 +39,5 @@ function lapcsere() {
     var i = $(this).attr("id");
     var fajlnev = "kartya/" + i + ".png";
     $("#jatekter img").eq(i - 1).attr({"src": fajlnev, "alt": "Kártyalap"});
+    $("#jatekter img").eq(i - 1).fadeTo("slow", 0.1);
 }
